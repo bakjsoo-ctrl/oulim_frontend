@@ -20,14 +20,12 @@
   gap: 35px;
   align-items: center;
 }
-
 .l-header-left {
   display: flex;
-  gap: 18px;
-  width: auto;
+  gap: 16px;
   margin: auto 0;
-  align-items: center;
-  /* border: 1px solid red; */
+  
+  /* border: 1px solid black; */
 }
 
 
