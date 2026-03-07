@@ -37,3 +37,16 @@
 .l-login-signup-layout div a{
   text-decoration-line: underline;
 }
+
+/* 에러 */
+
+.is-error-message{
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    min-height: 16px;
+}
+
+.c-input.is-error{
+    border: 1px solid red;
+}
