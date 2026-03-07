@@ -1,0 +1,110 @@
+.p-volunteer-manage-edit {
+    padding: 100px 0 140px;
+}
+
+.l-volunteer-manage-edit_inner {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.p-volunteer-manage-edit_header {
+    margin-bottom: 56px;
+    text-align: center;
+}
+
+.p-volunteer-manage-edit_title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+/* 전체 폼 2열 */
+.l-volunteer-manage-edit_form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 32px;
+    row-gap: 16px;
+}
+
+/* 각 줄: 라벨 + 필드 */
+.l-volunteer-manage-edit_form-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/* 왼쪽 라벨 폭 고정 */
+.l-volunteer-manage-edit_form-label {
+    flex-shrink: 0;
+    width: 88px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #222;
+    line-height: 1.5;
+}
+
+/* 오른쪽 입력영역이 남은 공간 다 차지 */
+.l-volunteer-manage-edit_form-field {
+    flex: 1;
+    min-width: 0;
+}
+
+.l-volunteer-manage-edit_form-field--period {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.l-volunteer-manage-edit_form-field--period .c-input {
+    flex: 1;
+    min-width: 0;
+}
+
+.l-volunteer-manage-edit_form-tilde {
+    flex-shrink: 0;
+    color: #666;
+    font-size: 16px;
+}
+
+.l-volunteer-manage-edit_form{
+    margin-top: 24PX;;
+}
+
+/* 제목은 한 줄 전체 사용 */
+.l-volunteer-manage-edit_form-item--full {
+    grid-column: 1 / -1;
+}
+
+/* 봉사 상세 내역 */
+.l-volunteer-manage-edit_detail {
+    margin-top: 32px;
+}
+
+.l-volunteer-manage-edit_detail-label {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.l-volunteer-manage-edit_detail textarea {
+    width: 100%;
+    min-height: 240px;
+    padding: 16px 20px;
+    resize: vertical;
+    box-sizing: border-box;
+    line-height: 1.2;
+}
+
+.l-volunteer-manage-edit_detail textarea.c-input {
+    min-height: 480px;
+    resize: vertical;
+}
+
+/* 버튼 영역 */
+.c-button--volunteer-manage-edit {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 56px;
+}
