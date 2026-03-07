@@ -1,0 +1,38 @@
+.p-volunteer-manage-list {
+    padding: 200px 0 140px;
+}
+
+.p-volunteer-manage-list_inner {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.p-volunteer-manage-list_header {
+    position: relative;
+    margin-bottom: 56px;
+    text-align: center;
+}
+
+.c-list__row:hover .c-list__col:nth-child(3) {
+    color: #2f80ed;
+}
+
+.p-volunteer-manage-list_header .c-button {
+    display: block;
+    margin-left: auto;
+}
+
+.p-volunteer-manage-list_content {
+    width: 100%;
+}
+
+.p-volunteer-manage-list .c-list {
+    width: 100%;
+}
+
+.p-volunteer-manage-list .c-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:36px;
+}

@@ -1,0 +1,27 @@
+.p-volunteer-manage-detail {
+    padding: 52px 0 140px;
+}
+
+.l-volunteer-manage-detail_inner {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.p-volunteer-manage-detail_header {
+    margin-bottom: 52px;
+    text-align: center;
+}
+
+.p-volunteer-manage-detail .c-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:36px;
+}
+
+.c-button--volunteer-manage-detail {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 52px;
+}
