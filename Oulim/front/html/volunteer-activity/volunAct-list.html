@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="/Oulim/asset/css/core/reset.css" />
   <link rel="stylesheet" href="/Oulim/asset/css/core/variable.css" />
   <link rel="stylesheet" href="/Oulim/asset/css/core/typography.css" />
+  <link rel="stylesheet" href="/Oulim/asset/css/core/layout.css">
   <!-- 컨포넌트 css 선택-->
   <link rel="stylesheet" href="/Oulim/asset/css/component/pagination.css" />
   <link rel="stylesheet" href="/Oulim/asset/css/component/input.css" />
@@ -18,7 +19,11 @@
   <link rel="stylesheet" href="/Oulim/asset/css/component/card.css" />
   <link rel="stylesheet" href="/Oulim/asset/css/component/DetailCard.css" />
   <link rel="stylesheet" href="/Oulim/asset/css/component/badge.css" />
+  <link rel="stylesheet" href="/Oulim/asset/css/component/select.css">
 
+
+  <!-- css -->
+  <link rel="stylesheet" href="/Oulim/asset/css/pages/volunteer-activity/volunAct-list.css">
   <script src="/Oulim/asset/assets/js/include.js"></script>
 </head>
 <script defer>
@@ -36,6 +41,47 @@
         </div>
         <!-- 봉사활동 조회 옵션 선택 그룹 -->
         <div class="l-volunAct-list-search-option-group">
+
+          <div class="l-volunAct-list-search-grid">
+            <div class="l-volunAct-list-search-item">
+              <label class="c-volunAct-list-search-label">활동분야</label>
+              <select class="c-select">
+                <option>선택</option>
+              </select>
+            </div>
+
+            <div class="l-volunAct-list-search-item">
+              <label class="c-volunAct-list-search-label">모집상태</label>
+              <select class="c-select">
+                <option>선택</option>
+              </select>
+            </div>
+
+            <div class="l-volunAct-list-search-item">
+              <label class="c-volunAct-list-search-label">주체 단체</label>
+              <input class="c-input" type="text" placeholder="주체 기업명">
+            </div>
+
+            <div class="l-volunAct-list-search-item">
+              <label class="c-volunAct-list-search-label">참여 가능 연령</label>
+              <select class="c-select">
+                <option>선택</option>
+              </select>
+            </div>
+          </div>
+
+           <div class="l-volunAct-list-search-keyword"> 
+            <select class="c-select">
+              <option>제목</option>
+              <option>작성자</option>
+            </select>
+
+            <input class="c-input" type="text" placeholder="관련 제목 검색">
+           </div> 
+
+          <div class="l-volunAct-list-search-submit">
+            <button class="c-button c-button--primary c-button--lg">조회</button>
+          </div>
 
         </div>
         <div class="l-volunAct-list-card-list">
@@ -60,8 +106,238 @@
                       <span class="c-detail-card__value"> 26.02.03 ~ 26.02.06 </span>
                     </div>
                     <div class="c-detail-card__row">
-                      <span class="c-detail-card__label"> 봉사시간 </span>
-                      <span class="c-detail-card__value"> 13 ~ 18 </span>
+                      <span class="c-detail-card__label"> 포인트 </span>
+                      <span class="c-detail-card__value"> 2000p </span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li class="l-volunAct-card-element">
+              <!-- 카드 detail-card -->
+              <div class="c-detail-card">
+                <a href="">
+                  <div class="c-detail-card__header">
+                    <span class="c-badge c-badge--primary"> 모집중 </span>
+                    <span class="c-badge c-badge--orange"> 독거노인 </span>
+                  </div>
+                  <h2 class="c-detail-card__title">주민과 함께하는 제설작업 봉사</h2>
+                  <div class="c-detail-card__info">
+                    <div class="c-detail-card__row">
+                      <span class="c-detail-card__label"> 봉사장소 </span>
+                      <span class="c-detail-card__value"> 서울특별시 도봉구 </span>
+                    </div>
+                    <div class="c-detail-card__row">
+                      <span class="c-detail-card__label"> 봉사기간 </span>
+                      <span class="c-detail-card__value"> 26.02.03 ~ 26.02.06 </span>
+                    </div>
+                    <div class="c-detail-card__row">
+                      <span class="c-detail-card__label"> 포인트 </span>
+                      <span class="c-detail-card__value"> 2000p </span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li class="l-volunAct-card-element">
+              <!-- 카드 detail-card -->
+              <div class="c-detail-card">
+                <a href="">
+                  <div class="c-detail-card__header">
+                    <span class="c-badge c-badge--primary"> 모집중 </span>
+                    <span class="c-badge c-badge--orange"> 독거노인 </span>
+                  </div>
+                  <h2 class="c-detail-card__title">주민과 함께하는 제설작업 봉사</h2>
+                  <div class="c-detail-card__info">
+                    <div class="c-detail-card__row">
+                      <span class="c-detail-card__label"> 봉사장소 </span>
+                      <span class="c-detail-card__value"> 서울특별시 도봉구 </span>
+                    </div>
+                    <div class="c-detail-card__row">
+                      <span class="c-detail-card__label"> 봉사기간 </span>
+                      <span class="c-detail-card__value"> 26.02.03 ~ 26.02.06 </span>
+                    </div>
+                    <div class="c-detail-card__row">
+                      <span class="c-detail-card__label"> 포인트 </span>
+                      <span class="c-detail-card__value"> 2000p </span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li class="l-volunAct-card-element">
+              <!-- 카드 detail-card -->
+              <div class="c-detail-card">
+                <a href="">
+                  <div class="c-detail-card__header">
+                    <span class="c-badge c-badge--primary"> 모집중 </span>
+                    <span class="c-badge c-badge--orange"> 독거노인 </span>
+                  </div>
+                  <h2 class="c-detail-card__title">주민과 함께하는 제설작업 봉사</h2>
+                  <div class="c-detail-card__info">
+                    <div class="c-detail-card__row">
+                      <span class="c-detail-card__label"> 봉사장소 </span>
+                      <span class="c-detail-card__value"> 서울특별시 도봉구 </span>
+                    </div>
+                    <div class="c-detail-card__row">
+                      <span class="c-detail-card__label"> 봉사기간 </span>
+                      <span class="c-detail-card__value"> 26.02.03 ~ 26.02.06 </span>
+                    </div>
+                    <div class="c-detail-card__row">
+                      <span class="c-detail-card__label"> 포인트 </span>
+                      <span class="c-detail-card__value"> 2000p </span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li class="l-volunAct-card-element">
+              <!-- 카드 detail-card -->
+              <div class="c-detail-card">
+                <a href="">
+                  <div class="c-detail-card__header">
+                    <span class="c-badge c-badge--primary"> 모집중 </span>
+                    <span class="c-badge c-badge--orange"> 독거노인 </span>
+                  </div>
+                  <h2 class="c-detail-card__title">주민과 함께하는 제설작업 봉사</h2>
+                  <div class="c-detail-card__info">
+                    <div class="c-detail-card__row">
+                      <span class="c-detail-card__label"> 봉사장소 </span>
+                      <span class="c-detail-card__value"> 서울특별시 도봉구 </span>
+                    </div>
+                    <div class="c-detail-card__row">
+                      <span class="c-detail-card__label"> 봉사기간 </span>
+                      <span class="c-detail-card__value"> 26.02.03 ~ 26.02.06 </span>
+                    </div>
+                    <div class="c-detail-card__row">
+                      <span class="c-detail-card__label"> 포인트 </span>
+                      <span class="c-detail-card__value"> 2000p </span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li class="l-volunAct-card-element">
+              <!-- 카드 detail-card -->
+              <div class="c-detail-card">
+                <a href="">
+                  <div class="c-detail-card__header">
+                    <span class="c-badge c-badge--primary"> 모집중 </span>
+                    <span class="c-badge c-badge--orange"> 독거노인 </span>
+                  </div>
+                  <h2 class="c-detail-card__title">주민과 함께하는 제설작업 봉사</h2>
+                  <div class="c-detail-card__info">
+                    <div class="c-detail-card__row">
+                      <span class="c-detail-card__label"> 봉사장소 </span>
+                      <span class="c-detail-card__value"> 서울특별시 도봉구 </span>
+                    </div>
+                    <div class="c-detail-card__row">
+                      <span class="c-detail-card__label"> 봉사기간 </span>
+                      <span class="c-detail-card__value"> 26.02.03 ~ 26.02.06 </span>
+                    </div>
+                    <div class="c-detail-card__row">
+                      <span class="c-detail-card__label"> 포인트 </span>
+                      <span class="c-detail-card__value"> 2000p </span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li class="l-volunAct-card-element">
+              <!-- 카드 detail-card -->
+              <div class="c-detail-card">
+                <a href="">
+                  <div class="c-detail-card__header">
+                    <span class="c-badge c-badge--primary"> 모집중 </span>
+                    <span class="c-badge c-badge--orange"> 독거노인 </span>
+                  </div>
+                  <h2 class="c-detail-card__title">주민과 함께하는 제설작업 봉사</h2>
+                  <div class="c-detail-card__info">
+                    <div class="c-detail-card__row">
+                      <span class="c-detail-card__label"> 봉사장소 </span>
+                      <span class="c-detail-card__value"> 서울특별시 도봉구 </span>
+                    </div>
+                    <div class="c-detail-card__row">
+                      <span class="c-detail-card__label"> 봉사기간 </span>
+                      <span class="c-detail-card__value"> 26.02.03 ~ 26.02.06 </span>
+                    </div>
+                    <div class="c-detail-card__row">
+                      <span class="c-detail-card__label"> 포인트 </span>
+                      <span class="c-detail-card__value"> 2000p </span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li class="l-volunAct-card-element">
+              <!-- 카드 detail-card -->
+              <div class="c-detail-card">
+                <a href="">
+                  <div class="c-detail-card__header">
+                    <span class="c-badge c-badge--primary"> 모집중 </span>
+                    <span class="c-badge c-badge--orange"> 독거노인 </span>
+                  </div>
+                  <h2 class="c-detail-card__title">주민과 함께하는 제설작업 봉사</h2>
+                  <div class="c-detail-card__info">
+                    <div class="c-detail-card__row">
+                      <span class="c-detail-card__label"> 봉사장소 </span>
+                      <span class="c-detail-card__value"> 서울특별시 도봉구 </span>
+                    </div>
+                    <div class="c-detail-card__row">
+                      <span class="c-detail-card__label"> 봉사기간 </span>
+                      <span class="c-detail-card__value"> 26.02.03 ~ 26.02.06 </span>
+                    </div>
+                    <div class="c-detail-card__row">
+                      <span class="c-detail-card__label"> 포인트 </span>
+                      <span class="c-detail-card__value"> 2000p </span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li class="l-volunAct-card-element">
+              <!-- 카드 detail-card -->
+              <div class="c-detail-card">
+                <a href="">
+                  <div class="c-detail-card__header">
+                    <span class="c-badge c-badge--primary"> 모집중 </span>
+                    <span class="c-badge c-badge--orange"> 독거노인 </span>
+                  </div>
+                  <h2 class="c-detail-card__title">주민과 함께하는 제설작업 봉사</h2>
+                  <div class="c-detail-card__info">
+                    <div class="c-detail-card__row">
+                      <span class="c-detail-card__label"> 봉사장소 </span>
+                      <span class="c-detail-card__value"> 서울특별시 도봉구 </span>
+                    </div>
+                    <div class="c-detail-card__row">
+                      <span class="c-detail-card__label"> 봉사기간 </span>
+                      <span class="c-detail-card__value"> 26.02.03 ~ 26.02.06 </span>
+                    </div>
+                    <div class="c-detail-card__row">
+                      <span class="c-detail-card__label"> 포인트 </span>
+                      <span class="c-detail-card__value"> 2000p </span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li class="l-volunAct-card-element">
+              <!-- 카드 detail-card -->
+              <div class="c-detail-card">
+                <a href="">
+                  <div class="c-detail-card__header">
+                    <span class="c-badge c-badge--primary"> 모집중 </span>
+                    <span class="c-badge c-badge--orange"> 독거노인 </span>
+                  </div>
+                  <h2 class="c-detail-card__title">주민과 함께하는 제설작업 봉사</h2>
+                  <div class="c-detail-card__info">
+                    <div class="c-detail-card__row">
+                      <span class="c-detail-card__label"> 봉사장소 </span>
+                      <span class="c-detail-card__value"> 서울특별시 도봉구 </span>
+                    </div>
+                    <div class="c-detail-card__row">
+                      <span class="c-detail-card__label"> 봉사기간 </span>
+                      <span class="c-detail-card__value"> 26.02.03 ~ 26.02.06 </span>
                     </div>
                     <div class="c-detail-card__row">
                       <span class="c-detail-card__label"> 포인트 </span>
@@ -76,12 +352,13 @@
           <!-- 봉사목록 카드 리스트 영역 종료-->
         </div>
 
-        <div style="width: 900px; margin:50px;">
+        <div class="l-volunAct-list-pagination" style="width: 900px; margin:50px;">
           <!-- 페이지네이션  c-pagination-->
           <nav class="c-pagination">
             <a class="c-pagination__link is-disabled">‹</a>
             <a class="c-pagination__link is-active">1</a>
-
+            <a class="c-pagination__link">2</a>
+            <a class="c-pagination__link">3</a>
             <a class="c-pagination__link">›</a>
           </nav>
         </div>
