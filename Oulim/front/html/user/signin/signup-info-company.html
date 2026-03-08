@@ -10,13 +10,8 @@
     <link rel="stylesheet" href="/Oulim/asset/css/core/variable.css" />
     <link rel="stylesheet" href="/Oulim/asset/css/core/Typography.css" />
     <!-- 컨포넌트 css 선택-->
-    <link rel="stylesheet" href="/Oulim/asset/css/component/pagination.css" />
     <link rel="stylesheet" href="/Oulim/asset/css/component/input.css" />
     <link rel="stylesheet" href="/Oulim/asset/css/component/button.css" />
-    <link rel="stylesheet" href="/Oulim/asset/css/component/list.css" />
-    <link rel="stylesheet" href="/Oulim/asset/css/component/card.css" />
-    <link rel="stylesheet" href="/Oulim/asset/css/component/DetailCard.css" />
-    <link rel="stylesheet" href="/Oulim/asset/css/component/badge.css" />
     <link rel="stylesheet" href="/Oulim/asset/css/core/layout.css" />
 
     <link
@@ -29,8 +24,9 @@
       src="/Oulim/asset/js/pages/user/signin/signup-info-company.js"
     ></script>
   </head>
-  <div id="header"></div>
+
   <body>
+    <div id="header"></div>
     <div class="l-main">
       <div class="l-container">
         <form action="">
@@ -67,12 +63,15 @@
               </div>
               <div class="c-signup-info-company-input-number">
                 <h6>비밀번호</h6>
+                <div class="l-toggle-layout">
                 <input
                   type="password"
                   name=""
                   id="company-user-password"
                   class="c-input"
                 />
+                <button type="button" id="c-password-btn-toggle"><img src="" alt="eye" id="c-password-toggle-img" /></button>
+                </div>
                 <p
                   id="is-company-user-password-error"
                   class="is-error-text"
@@ -80,12 +79,15 @@
               </div>
               <div class="c-signup-info-company-input-number">
                 <h6>비밀번호확인</h6>
+                <div class="l-toggle-layout-2">
                 <input
                   type="password"
                   name=""
                   id="company-user-password-check"
                   class="c-input"
                 />
+                <button type="button" id="c-password-btn-toggle-2"><img src="" alt="eye" id="c-password-toggle-img-2" /></button>
+                </div>
                 <p
                   id="is-company-user-password-check-error"
                   class="is-error-text"
@@ -105,6 +107,6 @@
         </form>
       </div>
     </div>
+    <div id="footer"></div>
   </body>
-  <div id="footer"></div>
 </html>

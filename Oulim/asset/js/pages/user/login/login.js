@@ -39,3 +39,18 @@ form.addEventListener("submit", function (e) {
     alert("입력값을 확인해주세요.");
   }
 });
+
+// 토글
+const userPw = document.getElementById("userPw");
+const pwBtn = document.getElementById("c-password-btn-toggle");
+const pwToggleIcon = document.getElementById("c-password-toggle-img");
+
+pwBtn.addEventListener("click", () => {
+  if (userPw.type === "password") {
+    userPw.type = "text";
+    // pwToggleIcon.src = "/Oulim/asset/image/;
+  } else {
+    userPw.type = "password";
+    // pwToggleIcon.src = "/Oulim/asset/image/";
+  }
+});

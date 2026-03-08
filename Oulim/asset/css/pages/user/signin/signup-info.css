@@ -50,3 +50,29 @@
 .c-input.is-error{
   border: 1px solid red;
 }
+
+/* 비번 표시  */
+
+.l-toggle-layout {
+  position: relative;
+}
+
+#c-password-btn-toggle{
+  position: absolute;
+  border: 1px solid red;
+  width: 50px;
+  height: 45px;
+  right: 10px;
+}
+
+.l-toggle-layout-2 {
+  position: relative;
+}
+
+#c-password-btn-toggle-2{
+  position: absolute;
+  border: 1px solid red;
+  width: 50px;
+  height: 45px;
+  right: 10px;
+}
