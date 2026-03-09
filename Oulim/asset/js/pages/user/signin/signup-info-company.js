@@ -57,13 +57,13 @@ signupBtn.addEventListener("click", function (e) {
 const nicknameCheckBtn = document.getElementById("c-nickname-dbcheck-btn");
 const passwordCheckBtn = document.getElementById("c-id-dbcheck-btn");
 
-nicknameCheckBtn.addEventListener("click", () => {
-  alert("중복확인 기능 연결예정");
-});
+// nicknameCheckBtn.addEventListener("click", () => {
+//   alert("중복확인 기능 연결예정");
+// });
 
-passwordCheckBtn.addEventListener("click", () => {
-  alert("중복확인 기능 연결예정");
-});
+// passwordCheckBtn.addEventListener("click", () => {
+//   alert("중복확인 기능 연결예정");
+// });
 
 
 // 토글
@@ -74,10 +74,10 @@ const pwToggleIcon = document.getElementById("c-password-toggle-img");
 pwBtn.addEventListener("click", () => {
   if (userPw.type === "password") {
     userPw.type = "text";
-    // pwToggleIcon.src = "/Oulim/asset/image/;
+    pwToggleIcon.src = "/Oulim/asset/image/user/password-on.png";
   } else {
     userPw.type = "password";
-    // pwToggleIcon.src = "/Oulim/asset/image/";
+    pwToggleIcon.src = "/Oulim/asset/image/user/password-off.png";
   }
 });
 
@@ -89,9 +89,9 @@ const pwToggleIcon2 = document.getElementById("c-password-toggle-img-2");
 pwBtn2.addEventListener("click", () => {
   if (userPw2.type === "password") {
     userPw2.type = "text";
-    // pwToggleIcon2.src = "/Oulim/asset/image/;
+    pwToggleIcon2.src = "/Oulim/asset/image/user/password-on.png";
   } else {
     userPw2.type = "password";
-    // pwToggleIcon2.src = "/Oulim/asset/image/";
+    pwToggleIcon2.src = "/Oulim/asset/image/user/password-off.png";
   }
 });
