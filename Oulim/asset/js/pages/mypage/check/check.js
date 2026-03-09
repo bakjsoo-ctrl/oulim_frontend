@@ -21,6 +21,19 @@ cancel.addEventListener("click", () => {
     alert("취소");
 });
 
+const pwBtn = document.getElementById("c-password-btn-toggle");
+const pwToggleIcon = document.getElementById("c-password-toggle-img");
+
+pwBtn.addEventListener("click", () => {
+  if (password.type === "password") {
+    password.type = "text";
+    pwToggleIcon.src = "/Oulim/asset/image/user/password-on.png";
+  } else {
+    password.type = "password";
+    pwToggleIcon.src = "/Oulim/asset/image/user/password-off.png";
+  }
+});
+
 // 1. 입력 값이 없이 확인 버튼 클릭 시, alert > 입력해주세요.
 
 // 2. 취소 버튼 누르면 history(-1);

@@ -12,8 +12,8 @@ const nicknameContainer = document.getElementsByClassName("i-nickname")[0];
 const email = document.getElementById("email");
 const emailContainer = document.getElementsByClassName("i-email")[0];
 const verify = document.getElementById("verify");
-const newPassword = document.getElementsByName("new-password");
-const passwordChk = document.getElementsByName("new-password-check");
+const newPassword = document.getElementsByName("new-password")[0];
+const passwordChk = document.getElementsByName("new-password-check")[0];
 
 
 const exist1 = document.getElementsByClassName("c-button c-button--primary c-button--md")[0];
@@ -79,4 +79,29 @@ accept.addEventListener("click", () => {
 cancel.addEventListener("click", () => {
     // location("../");
     alert("취소");
+});
+
+const pwBtn = document.getElementById("c-password-btn-toggle");
+const pwBtn2 = document.getElementById("c-password-btn-toggle-2")
+const pwToggleIcon = document.getElementById("c-password-toggle-img");
+const pwToggleIcon2 = document.getElementById("c-password-toggle-2-img");
+
+pwBtn.addEventListener("click", () => {
+  if (newPassword.type === "password") {
+    newPassword.type = "text";
+    pwToggleIcon.src = "/Oulim/asset/image/user/password-on.png";
+  } else {
+    newPassword.type = "password";
+    pwToggleIcon.src = "/Oulim/asset/image/user/password-off.png";
+  }
+});
+
+pwBtn2.addEventListener("click", () => {
+  if (passwordChk.type === "password") {
+    passwordChk.type = "text";
+    pwToggleIcon2.src = "/Oulim/asset/image/user/password-on.png";
+  } else {
+    passwordChk.type = "password";
+    pwToggleIcon2.src = "/Oulim/asset/image/user/password-off.png";
+  }
 });
