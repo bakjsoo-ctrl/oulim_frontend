@@ -52,7 +52,18 @@ footer {
 
 .pw-text {
     display: flex;
+    
     margin-bottom: 30px;
+    
+}
+.c-form-field.is-error span {
+    position: absolute;
+    top: 75px;
+    
+}
+
+.c-form-field__label {
+    margin-bottom: -7px;
 }
 
 .pw-text button {
@@ -69,3 +80,9 @@ footer {
     margin: 10px 5px;
     width: 120px;
 }
+
+.c-form-field.is-error {
+    display: none;
+    position: relative;
+}
+
