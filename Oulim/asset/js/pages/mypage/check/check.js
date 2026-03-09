@@ -12,6 +12,8 @@ accept.addEventListener('click', () => {
         alert("로그인 성공");
     };
 
+    
+
 });
 
 cancel.addEventListener("click", () => {

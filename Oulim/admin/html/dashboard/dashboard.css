@@ -114,30 +114,35 @@ border: 1px solid black;
 
 }
 
+/* 메인위에 헤더 */
+.header{
+    padding-bottom:30px;
+
+border-bottom:1px solid #ddd;
+
+margin-bottom:100px;
+}
+
 
 /* 메인 영역 */
-
-/* 타이틀 영역 */
 .total{
-flex: 1 1;
-}
-#avg-title {
-  border-bottom : 1px solid black;
-  width: 100%;
-  height:100px;
+display:flex;
+flex-direction:column;
+flex:1;
 
 }
-
 /* 메인 내용영역 */
 .l-content{
 flex:1;
 background:#f0f0f0;
-/* padding:40px; */
 border: 1px solid black;
+
 display: flex;
 flex-direction: column;
-justify-content: center;
-margin-left: 50px;
+
+
+width:100%;
+padding:30px;
 }
 #top-area{
     margin-top: 0;

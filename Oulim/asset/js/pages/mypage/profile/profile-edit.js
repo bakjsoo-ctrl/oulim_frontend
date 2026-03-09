@@ -8,26 +8,35 @@
 
 // const nickname = document.getElementsByName("nickname")[0];
 const nickname = document.getElementById("nickname");
+const nicknameContainer = document.getElementsByClassName("i-nickname")[0];
 const email = document.getElementById("email");
+const emailContainer = document.getElementsByClassName("i-email")[0];
 const verify = document.getElementById("verify");
 const newPassword = document.getElementsByName("new-password");
 const passwordChk = document.getElementsByName("new-password-check");
 
-const exist1 = document.getElementsByClassName("c-button c-button--primary c-button--md")[0];
-const exist2 = document.getElementsByClassName("c-button c-button--primary c-button--md")[1];
-const verifyBtn = document.getElementsByClassName("c-button c-button--primary c-button--md")[2];
-const addrBtn = document.getElementsByClassName("c-button c-button--primary c-button--md")[3];
 
+const exist1 = document.getElementsByClassName("c-button c-button--primary c-button--md")[0];
+const exist2 = document.getElementsByClassName("c-button c-button--primary c-button--md")[2];
+const verifyBtn = document.getElementsByClassName("c-button c-button--primary c-button--md")[4];
+const addrBtn = document.getElementsByClassName("c-button c-button--primary c-button--md")[6];
+
+const nicknameError = document.getElementsByClassName("c-form-field is-error")[0];
+const emailError = document.getElementsByClassName("c-form-field is-error")[1];
+const verifyError = document.getElementsByClassName("c-form-field is-error")[2];
 
 const accept = document.getElementById("accept");
 const cancel = document.getElementById("cancel");
 
 exist1.addEventListener("click", () => { // 닉네임 검사
 
+
     if (nickname.value.trim() === "") {
         alert("비었음");
     } else if (nickname.value.trim() === "wnstmd") {
-        alert("중복임");
+
+        nicknameContainer.style.display = "none";
+        nicknameError.style.display = "block";
     };
 
 });
@@ -37,7 +46,8 @@ exist2.addEventListener("click", () => { // 이메일 검사
     if (email.value.trim() === "") {
         alert("비었음");
     } else if (email.value.trim() === "wnstmd@naver.com") {
-        alert("중복임");
+        emailContainer.style.display = "none";
+        emailError.style.display = "block";
     };
 
 });
@@ -45,7 +55,7 @@ exist2.addEventListener("click", () => { // 이메일 검사
 verifyBtn.addEventListener("click", () => { // 인증번호 검사
 
     if (verify.value.trim() === "") {
-        alert("값 입력 안됨");
+        alert("인증번호가 발송되었습니다.");
     } else if (verify.value.trim() === "1234") {
         alert("인증성공");
     };
@@ -61,6 +71,8 @@ addrBtn.addEventListener("click", () => { // 주소 입력 api
 accept.addEventListener("click", () => {
 
     alert("수정 완료");
+
+    
 
 });
 
