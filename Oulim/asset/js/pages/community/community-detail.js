@@ -1,7 +1,11 @@
+// 작성 버튼
 const commentPostBtn = document.querySelector(".c-comment-post-btn .c-button--primary");
 
 const commentText = document.querySelector(".c-comment-textarea");
 const recommendBtn = document.querySelector(".c-comment-post-btn .c-button--primary");
+
+// 목록으로 돌아가기 버튼
+const returnBtn = document.querySelector(".l-return-button .c-button");
 
 const isLogin = true;
 const userType = "USER";
@@ -50,3 +54,7 @@ recommendBtn.addEventListener("click", (e) => {
     // TODO DB 비교 필요
 });
 
+returnBtn.addEventListener("click", (e) => {
+  console.log("목록으로 돌아가기 버튼 클릭")
+  location.href = "/Oulim/front/html/community/community-list.html";
+});

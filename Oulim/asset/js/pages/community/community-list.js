@@ -1,4 +1,6 @@
+// 봉사후기 카드
 const communityPost = document.querySelectorAll(".c-list__body a");
+// 글쓰기 버튼
 const postBtn = document.querySelector(".c-community-post-btn .c-button");
 
 const isLogin = true;
@@ -31,4 +33,6 @@ postBtn.addEventListener("click", (e) =>{
             alert("기업 회원 및 관리자는 사용할 수 없습니다.");
             return;
         }
+
+        location.href="/Oulim/front/html/community/community-post.html";
 });
