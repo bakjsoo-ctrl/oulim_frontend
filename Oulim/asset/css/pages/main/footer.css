@@ -11,19 +11,18 @@
 
 .l-footer-main{
   display: flex;
-  height: 100%;
+  height: 100px;
   gap: 24px;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
 }
-
+.c-footer-logo{
+  width: 100px;
+}
+.c-footer-logo__img{
+  width: 100%;
+}
 .l-footer-main div h6{
   color: var(--color-Tertiary);
-}
-
-.l-footer-main div img{
-  display: inline;
-  width: 200px;
-  height: 50px;
 }

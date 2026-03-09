@@ -49,11 +49,11 @@ document.addEventListener("DOMContentLoaded", () => {
   })
 
   missionBtn?.addEventListener("click", () => {
-    location.href="/mission"
+    location.href="/Oulim/front/html/kkomi/mission.html"
   })
 
   storageBtn?.addEventListener("click", () => {
-    location.href="/storage"
+    location.href="/Oulim/front/html/kkomi/storage-box.html"
   })
 
 })
