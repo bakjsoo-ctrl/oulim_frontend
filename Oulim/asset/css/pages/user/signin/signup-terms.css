@@ -1,3 +1,5 @@
+
+
 /* 일반 일때 나오는 약관 */
 #is-general-terms{
     display: block;
@@ -8,22 +10,34 @@
 }
 
 
-.p-signup{
-    display: block;
-    width: 100%;
-}
-
 .l-signup-choice{
     display: flex;
+    width: 360px;
     text-align: center;
+    cursor: pointer;
     justify-content: center;
     margin-bottom: 20px;
+    padding: 0 20px;
+    gap: 8px;
 }
-.l-signup-choice img{
-    width: 100px;
-    height: 100px;
+
+.c-signup-choice-button{
+    width: 100%;
+    padding: 16px 24px;
     border-radius: var(--radius-md);
+    background-color: var(--color-background);
+}
+
+.c-signup-choice-button:hover{
     background-color: var(--color-background-sub);
+}
+.c-signup-choice-button:active{
+    background-color: var(--color-background-sub);
+    border-color: brown;
+}
+.c-signup-choice-button__icon{
+    width: 100%;
+    padding: 0 20px;
 }
 
 .l-signup-main{
