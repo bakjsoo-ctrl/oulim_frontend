@@ -21,6 +21,14 @@
 .c-signup-verify-input h6{
     margin: 10px 0;
 }
+.l-signup-verify-layout-btn {
+    display: flex;
+    gap: 10px;
+}
+.c-signup-btn {
+    width: 180px;
+    white-space: nowrap;
+}
 
 .c-signup-verify-text{
     margin-bottom: 30px;

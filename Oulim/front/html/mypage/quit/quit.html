@@ -14,6 +14,7 @@
   <!-- component css -->
   <link rel="stylesheet" href="/Oulim/asset/css/component/input.css" />
   <link rel="stylesheet" href="/Oulim/asset/css/component/button.css" />
+  <link rel="stylesheet" href="/Oulim/asset/css/component/checkbox.css">
 
   <link rel="stylesheet" href="/Oulim/asset/css/pages/mypage/quit/quit.css" />
 
@@ -116,7 +117,7 @@
             beatae in molestias, ipsam expedita, obcaecati, cupiditate
             fugiat atque adipisci eaque eius.
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Qui magnam fugit consectetur vitae nemo accusamus ullam
+            Qui magnam fugit consectetur vitae nemo accusamus ullams
             beatae in molestias, ipsam expedita, obcaecati, cupiditate
             fugiat atque adipisci eaque eius.
           </fieldset>
@@ -125,11 +126,15 @@
 
         <!-- 체크 -->
         <div class="chk-box">
-          <label>
-            <input id="chk-box-label" type="checkbox" />
-            탈퇴 약관을 읽고 이해하였으며, 이에 동의합니다.
+          <label class="c-checkbox">
+            <input type="checkbox">
+            <span class="c-checkbox__box"></span>
+            <span>
+              <h5>탈퇴 약관을 읽고 이해하였으며, 이에 동의합니다.</h5>
+            </span>
           </label>
         </div>
+
 
 
         <!-- 비밀번호 -->

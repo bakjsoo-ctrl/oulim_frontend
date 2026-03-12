@@ -31,7 +31,10 @@
     <div class="l-main">
       <div class="l-container">
         <div class="p-signup">
-          <form action="/Oulim/front/html/user/signin/signup-verify.html" method="get">
+          <form
+            action="/Oulim/front/html/user/signin/signup-verify.html"
+            method="get"
+          >
             <div class="l-signup-main">
               <div>
                 <h2>회원가입</h2>
@@ -47,13 +50,20 @@
                 </div>
               </div>
               <div id="is-general-terms">
+                <!-- 여기가 일반 -->
                 <div class="l-signup-toplayout">
-                  <input type="checkbox" name="" id="is-all-check" />
-                  <h5>전체 이용약관 동의</h5>
+                  <label class="c-checkbox">
+                    <input type="checkbox" id="is-all-check" />
+                    <span class="c-checkbox__box"></span>
+                    <h5>전체 이용약관 동의</h5>
+                  </label>
                 </div>
                 <div class="l-signup-toplayout">
-                  <input type="checkbox" name="" id="" class="is-agree-check" />
-                  <h5>이용약관(필수)</h5>
+                  <label class="c-checkbox">
+                    <input type="checkbox" class="is-agree-check" />
+                    <span class="c-checkbox__box"></span>
+                    <h5>이용약관(필수)</h5>
+                  </label>
                 </div>
                 <div class="c-signup-textarea">
                   제 1장 총칙 제 1 조 (목적) 이 이용약관(이하 "약관"이라
@@ -70,8 +80,11 @@
                   계약을 말합니다.
                 </div>
                 <div class="l-signup-toplayout">
-                  <input type="checkbox" name="" id="" class="is-agree-check" />
-                  <h5>개인정보 수집 및 이용에 대한 안내(필수)</h5>
+                  <label class="c-checkbox">
+                    <input type="checkbox" class="is-agree-check" />
+                    <span class="c-checkbox__box"></span>
+                    <h5>이용약관(필수)</h5>
+                  </label>
                 </div>
                 <div class="c-signup-textarea">
                   제공하신 개인정보는 아래 수집 목적 이외의 용도로는 사용되지
@@ -89,8 +102,11 @@
                   정한 기간동안 회원정보를 수집·처리합니다. 보유 및 이용 기간
                 </div>
                 <div class="l-signup-toplayout">
-                  <input type="checkbox" name="" id="" class="is-agree-check" />
-                  <h5>개인정보 제3자 제공 동의(선택)</h5>
+                  <label class="c-checkbox">
+                    <input type="checkbox" class="is-agree-check" />
+                    <span class="c-checkbox__box"></span>
+                    <h5>이용약관(필수)</h5>
+                  </label>
                 </div>
                 <div class="c-signup-textarea">
                   제공하신 개인정보는 아래 수집 목적 이외의 용도로는 사용되지
@@ -117,13 +133,20 @@
                 </div>
               </div>
               <div id="is-business-terms">
+                <!-- 여기가 기업 -->
                 <div class="l-signup-toplayout">
-                  <input type="checkbox" name="" id="is-all-check" />
-                  <h5>전체 이용약관 동의</h5>
+                  <label class="c-checkbox">
+                    <input type="checkbox" id="is-all-check-general" />
+                    <span class="c-checkbox__box"></span>
+                    <h5>전체 이용약관 동의</h5>
+                  </label>
                 </div>
                 <div class="l-signup-toplayout">
-                  <input type="checkbox" name="" class="is-agree-check" />
-                  <h5>이용약관(필수)</h5>
+                  <label class="c-checkbox">
+                    <input type="checkbox" class="is-agree-check-general" />
+                    <span class="c-checkbox__box"></span>
+                    <h5>이용약관(필수)</h5>
+                  </label>
                 </div>
                 <div class="c-signup-textarea">
                   여기는 기업 입니다 제 1장 총칙 제 1 조 (목적) 이 이용약관(이하
@@ -140,8 +163,11 @@
                   간에 체결하는 모든 계약을 말합니다.
                 </div>
                 <div class="l-signup-toplayout">
-                  <input type="checkbox" name="" id="" class="is-agree-check" />
-                  <h5>개인정보 수집 및 이용에 대한 안내(필수)</h5>
+                  <label class="c-checkbox">
+                    <input type="checkbox" class="is-agree-check-general" />
+                    <span class="c-checkbox__box"></span>
+                    <h5>이용약관(필수)</h5>
+                  </label>
                 </div>
                 <div class="c-signup-textarea">
                   여기는 기업 입니다 제공하신 개인정보는 아래 수집 목적 이외의
@@ -160,8 +186,11 @@
                   이용 기간
                 </div>
                 <div class="l-signup-toplayout">
-                  <input type="checkbox" name="" id="" class="is-agree-check" />
-                  <h5>개인정보 제3자 제공 동의(선택)</h5>
+                  <label class="c-checkbox">
+                    <input type="checkbox" class="is-agree-check-general" />
+                    <span class="c-checkbox__box"></span>
+                    <h5>이용약관(필수)</h5>
+                  </label>
                 </div>
                 <div class="c-signup-textarea">
                   여기는 기업 입니다 제공하신 개인정보는 아래 수집 목적 이외의
@@ -182,7 +211,7 @@
                 <div class="c-signup-btn">
                   <button
                     class="c-button c-button--primary c-button--md"
-                    id="is-next-btn"
+                    id="is-next-btn-general"
                   >
                     다음
                   </button>

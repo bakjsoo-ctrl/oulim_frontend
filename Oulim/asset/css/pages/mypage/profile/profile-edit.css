@@ -52,7 +52,19 @@ footer {
 
 .pw-text {
     display: flex;
+    position: relative;
     margin-bottom: 30px;
+
+    
+}
+.c-form-field.is-error span {
+    position: absolute;
+    top: 75px;
+    
+}
+
+.c-form-field__label {
+    margin-bottom: -7px;
 }
 
 .pw-text button {
@@ -68,4 +80,41 @@ footer {
 .c-button-group > button {
     margin: 10px 5px;
     width: 120px;
+}
+
+.c-form-field.is-error {
+    display: none;
+    position: relative;
+}
+
+
+
+#c-password-btn-toggle{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 3px;
+  top: 7px;
+}
+
+#c-password-btn-toggle img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+}
+
+#c-password-btn-toggle-2{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 3px;
+  top: 7px;
+}
+
+#c-password-btn-toggle-2 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4;
 }
